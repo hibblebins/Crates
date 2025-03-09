@@ -15,6 +15,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.crates"))
                     .icon(() -> new ItemStack(ModItems.DIAMOND_DUST)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DIAMOND_DUST);
+                        entries.add(ModItems.DIAMOND_SHARD);
                         entries.add(ModBlocks.CRATE);
                     }).build());
 

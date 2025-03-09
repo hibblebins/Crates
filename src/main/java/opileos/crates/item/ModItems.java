@@ -1,6 +1,7 @@
 package opileos.crates.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -12,9 +13,15 @@ import opileos.crates.OpileosCratesMod;
 
 public class ModItems {
 
-    public static final Item DIAMOND_DUST = registerItem("diamond_dust", new Item(new FabricItemSettings()));
+    public static final Item DIAMOND_DUST = registerItem("diamond_dust", new Item(new FabricItemSettings().food(ModFoodComponents.DIAMOND_DUST)));
+    public static final Item DIAMOND_SHARD = registerItem("diamond_shard", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(DIAMOND_DUST);
+        entries.add(DIAMOND_SHARD);
+    }
+
+    private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(DIAMOND_DUST);
     }
 
@@ -26,5 +33,6 @@ public class ModItems {
         OpileosCratesMod.LOGGER.info("Registering Mod Items for " + OpileosCratesMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodTabItemGroup);
     }
 }
