@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.DIAMOND_DUST)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DIAMOND_DUST);
                         entries.add(ModItems.DIAMOND_SHARD);
+                        entries.add(ModItems.SHARD_BOWL);
                         entries.add(ModBlocks.CRATE);
                     }).build());
 

@@ -15,6 +15,7 @@ public class ModItems {
 
     public static final Item DIAMOND_DUST = registerItem("diamond_dust", new Item(new FabricItemSettings().food(ModFoodComponents.DIAMOND_DUST)));
     public static final Item DIAMOND_SHARD = registerItem("diamond_shard", new Item(new FabricItemSettings()));
+    public static final Item SHARD_BOWL = registerItem("shard_bowl", new Item(new FabricItemSettings().maxCount(16).food(ModFoodComponents.SHARD_BOWL)));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(DIAMOND_DUST);
