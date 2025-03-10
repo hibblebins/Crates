@@ -1,0 +1,9 @@
+{
+  "item.additions.diamond_dust": "Diamond Dust",
+  "item.additions.diamond_shard": "Diamond Shard",
+  "item.additions.shard_bowl": "Bowl of Diamond Shards",
+
+  "block.additions.crate": "Item Crate",
+
+  "itemgroup.additions": "Opileos Additions"
+}

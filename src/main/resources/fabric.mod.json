@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "crates",
+	"id": "additions",
 	"version": "${version}",
-	"name": "Opileo's Crates Mod",
+	"name": "Opileo's Additions",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -16,14 +16,14 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"opileos.crates.OpileosCratesMod"
+			"opileos.additions.OpileosAdditions"
 		],
 		"fabric-datagen": [
-			"opileos.crates.OpileosCratesModDataGenerator"
+			"opileos.additions.OpileosAdditionsDataGenerator"
 		]
 	},
 	"mixins": [
-		"crates.mixins.json"
+      "additions.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",

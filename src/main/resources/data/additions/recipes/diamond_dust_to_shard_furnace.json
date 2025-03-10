@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 4,
+  "group": "additions",
+  "ingredient": {
+    "item": "additions:diamond_dust"
+  },
+  "result": "additions:diamond_shard"
+}
